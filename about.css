@@ -1,0 +1,61 @@
+@import url(global.css);
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.conteudo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  padding: 1.5rem 0;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacao {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  gap: .5rem;
+}
+
+.informacao:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.informacao img {
+  width: 500px;
+  height: 400px;
+}
+
+.informacao h3 {
+  font-size: x-large;
+
+  color: rgb(172, 215, 255);
+}
+
+.informacao p {
+  color: rgb(243, 225, 225);
+
+  text-align: justify;
+}
+
+.informacao p a {
+  color: rgb(172, 215, 255);
+  text-decoration: none;
+}
+
+.informacao p a:hover {
+  text-decoration: underline;
+}

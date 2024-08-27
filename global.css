@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  margin: 0;
+  color: white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.8122898817730217) 17%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.cabecalho {
+  height: 4rem;
+
+  border-bottom: 2px solid #aed7e750;
+}
+
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.cabecalho h1 {
+  margin: 0;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #709cce, #4f6e91);
+
+  font-family: 'Fira Sans Condensed', Roboto, Arial, sans-serif;
+  font-weight: 900;
+}
+
+.cabecalho h1:hover {
+  transform: scale(1.03);
+}
+
+.menu ul {
+  display: flex;
+  gap: 1.5rem;
+
+  list-style: none;
+}
+
+.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid whitesmoke;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu-conteudo {
+  visibility: hidden;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  top: 1.5rem;
+
+  padding: .25rem;
+  min-width: 11.7rem;
+  border-radius: 4px;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+  background-color: #1d4b5e;
+
+  transition: all 0.5s ease 0s !important;
+}
+
+.submenu-conteudo li a {
+  display: flex;
+  flex: 1 1;
+
+  padding: .5rem 1rem;
+}
+
+.submenu-conteudo li:hover a {
+  border-bottom: none;
+  border-radius: 2px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.submenu:hover .submenu-conteudo,
+.submenu-conteudo:hover {
+  visibility: visible;
+}
+
+.rodape {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  height: 3rem;
+  padding: .5rem 0;
+
+  border-top: 2px solid #aed7e750;
+}
+
+.rodape address a {
+  font-style: normal;
+  text-decoration: none;
+
+  color: #d8d6d6;
+}
+
+.rodape address a:hover {
+  transition: 500ms;
+
+  color: white;
+}
